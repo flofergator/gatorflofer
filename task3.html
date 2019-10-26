@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        login page
+    </title>
+    <style>
+        #body{
+            line-height: 35px;
+        }
+
+        span {
+            color: black;
+            font-family: monospace;
+        }
+
+        button {
+            margin-right: 10px;
+            font-family: monospace;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .gray {
+            background-color: gray;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+        }
+
+        #text {
+            font-size: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="body">
+        <div>
+            <span>Select the color for text</span><br>
+
+
+            <button onclick="green()" class="green">Green</buttton>
+                <button onclick="blue()" class="blue">Blue</buttton>
+                    <button onclick="red()" class="red">Red</buttton>
+                        <button onclick="gray()" class="gray">Gray</buttton>
+                            <button onclick="black()" class="black">Black</buttton>
+        </div>
+        <br>
+        <div>
+            <span>Select the color for background</span><br>
+            <button onclick="document.body.style.backgroundColor = 'green';" class="green">Green</buttton>
+                <button onclick="document.body.style.backgroundColor = 'blue';" class="blue">Blue</buttton>
+                    <button onclick="document.body.style.backgroundColor = 'red';" class="red">Red</buttton>
+                        <button onclick="document.body.style.backgroundColor = 'gray';" class="gray">Gray</buttton>
+                            <button onclick="document.body.style.backgroundColor = 'black';" class="black">Black</buttton>
+        </div>
+
+        <div>
+
+            <span id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ea non accusamus at iure illo quasi deserunt commodi magnam, quo optio illum nobis voluptas saepe, dolorem recusandae fuga modi ut.</span>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script>
+        //change the text color
+        function green() {
+
+            document.getElementById("text").style = "color:green";
+        }
+
+        function blue() {
+
+            document.getElementById("text").style = "color:blue";
+        }
+
+        function red() {
+
+            document.getElementById("text").style = "color:red";
+        }
+
+        function gray() {
+
+            document.getElementById("text").style = "color:gray";
+        }
+
+        function black() {
+
+            document.getElementById("text").style = "color:black";
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
